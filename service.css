@@ -1,0 +1,98 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 20%;
+    background-color: #2c3e50;
+    padding: 20px;
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+  }
+  
+  .sidebar nav ul li {
+    margin: 20px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .sidebar nav ul li a:hover {
+    color: #3498db;
+  }
+  
+  .main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  /* Skills Section */
+  #skills {
+    margin-top: 40px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .skill {
+    width: 100%;
+  }
+  
+  .skill h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .skill-bar {
+    background-color: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #3498db;
+    height: 25px;
+    border-radius: 25px;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+    }
+  
+    .skills-content {
+      flex-direction: column;
+    }
+  }
+  
